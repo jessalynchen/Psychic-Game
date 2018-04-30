@@ -4,7 +4,7 @@
     <meta charset = "UTF-8">
     <title>Psychic Game</title>
     <!--Link JavaScript game-->
-    <script type="text/javascript" src="assets/javascript/game1.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
     
     </head>
 
@@ -15,87 +15,26 @@
         Guess what letter I'm thinking of...
 
             <p>               
-            Wins:<p id="Win"></p>
             <!--(# of times the user has guessed the letter correctly)-->
+            Wins:
+            <p id="Win"></p>
             
             </p>
             <p> 
-            Losses: <p id="Loss"></p>
-                <!--(# of times the user has failed to guess the letter correctly after exhausting all guesses)-->
-           
+            <!--(# of times the user has failed to guess the letter correctly after exhausting all guesses)-->
+           Losses: 
+            <p id="Loss"></p>
+            
             </p>
             <p>
             <!--(# of guesses left. This will update)-->
-            Guesses Left: <p id="Chances"></p>
+            Guesses Left: 
+            <p id="Chances"></p>
             </p>
             <p>
 
-<!--(the specific letters that the user typed. Display these until the user either wins or loses.)-->
+            <!--(the specific letters that the user typed. Display these until the user either wins or loses.)-->
             Your Guesses so Far: <p id="Guesses"></p>
-<!-- 
-            <script>
-                //declare variables
-                var totalLoss = 0;
-                var totalGuess = 9; 
-                var totalWin = 0; 
-                var userInput = document.getElementById("user");
-                var userGuess = [];
-                
-                //generate random letters from array
-                var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", 
-                "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-                var compInput = letters[Math.floor(Math.random()*letters.length)];
-                //execute random function each time a keyboard button is ProgressEvent
-                
-                //document.body.innerHTML = compInput
-                console.log(compInput);
-                //change user input into upper case and store it in a variable
 
-                //check if userGuess is same as compInput
-                
-
-// userInput.value = userInput.value.toUpperCase();
-for (i = 0; i < 10; i++) {
-//add the userInput contents into userGuess array
-userGuess.push(userInput);
-                                  
-//when user inputs compInput changes. For each input guess, then random is regenerated
-for (i = 0; i < storeInput.length; i++){
-
-
-                if (totalGuess < 10){
-                    if (userInput == compInput){
-                        totalWin = totalWin + 1; 
-                        totalGuess = totalGuess -1;
-                    } else {
-                        totalLoss = totalLoss + 1;
-                        totalGuess = totalGuess - 1;
-                    }
-                }
-              
-                document.getElementById('Loss').innerHTML = totalLoss;
-                document.getElementById('Win').innerHTML = totalWin;
-                document.getElementById('Chances').innerHTML = totalGuess;
-                document.getElementById("Guesses").innerHTML = userGuess;
-                
-                // function changeUpper(){
-                //     var userInput = document.getElementById("user");
-                //     checkInput = userInput.value.toUpperCase();
-                // }
-                function storeInput(){
-                    var x = document.getElementById("user").value;
-                    document.getElementById("Guesses").innerHTML = x;
-                    }
-                //     userGuess.push(userInput);
-                //     document.getElementById("Guesses").innerHTML = userGuess;
-                // }
-
-               
-                //put user inputs inside this array
-                // var userArray = []
-
-               
-            
-            </script> -->
 </body>
 </html>
