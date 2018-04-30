@@ -30,7 +30,9 @@ document.onkeyup = function (event) {
         if (totalWin < 10 && totalWin >= 0){
             totalWin = totalWin + 1;
             displayWin.textContent = totalWin;
-            console.log("You have the same number");
+            //restart guesses back to 9 and clear all past guesses
+            totalGuess = 9;
+            userGuess = [];
         }
     }
     if (userInput !== compInput) {
